@@ -5,12 +5,12 @@ class Config:
     # API Keys - try to load from environment or use placeholder
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "sk-placeholder-key")  # Replace with your actual key in environment
     GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyD4Dn3h6EBoVHBgnxB9QRzbzk_Y4qxMTSY")  # Updated Gemini API key
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
     SEARCH_ENGINE_ID = os.getenv("SEARCH_ENGINE_ID", "your_search_engine_id")  # Google Custom Search Engine ID
     
     # Instagram Credentials
-    INSTAGRAM_USERNAME = "bossofengineering"
-    INSTAGRAM_SESSION_ID = "59971323477%3AWHjBgu9V5gRLnB%3A6%3AAYe0f0_t-dP1hZxLYL7LwCMZLqlNZIbRAAvU"
+    INSTAGRAM_USERNAME = os.getenv("INSTAGRAM_USERNAME")
+    INSTAGRAM_SESSION_ID = os.getenv("INSTAGRAM_SESSION_ID")
 
     # Assistant Settings
     VOICE = "en-US-ChristopherNeural"
